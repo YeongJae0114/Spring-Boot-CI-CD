@@ -3,7 +3,6 @@
 ### 1일차
 - IntelliJ, Git 환경설정
 
-
 ### 2일차
 #### 도커
 **도커란?**
@@ -67,6 +66,11 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 cd my-html-app
 docker build -t my-html-app .
+```
+
+**5. 도커 컨테이너를 실행**
+```
+docker run -d --name my-container -p 8080:80 my-html-app
 ```
 
 
